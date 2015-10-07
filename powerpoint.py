@@ -4,7 +4,7 @@ powerpoint = wc.Dispatch('PowerPoint.Application')
 # format code https://msdn.microsoft.com/ZH-CN/library/office/ff746500.aspx
 format_dict={'ppt':1,'pptx':11}
 def convert(fromdir,todir):
-    ppt = powerpoint.Presentations.Open(fromdir)
+    ppt = powerpoint.Presentations.Open(fromdir,WithWindow=0)
     file_type=''
     if todir.rfind('.')==-1:
         file_type='pptx'
