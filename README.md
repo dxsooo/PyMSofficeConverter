@@ -14,4 +14,4 @@ copy the necessary code in the files
 See code detail in file 'word.py'
 
 ### Updates
-ver 0.1 on 2015/10/17
+ver 0.1 on 2015/10/7
