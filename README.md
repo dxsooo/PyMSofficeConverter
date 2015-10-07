@@ -6,8 +6,8 @@ Your PC should be WIN7 or above and make sure that you have Microsoft Office(ver
 
 ## Features  
 support Microsoft word document convert between **.doc** and **.docx**  
+support Microsoft excel workbook convert between **.xls** and **.xlsx**  
 support Microsoft powerpoint presentation convert between **.ppt** and **.pptx**
-support Microsoft excel workbook convert between **.xls** and **.xlsx**
 
 ## Usage
 copy the necessary code from the files to your own code
