@@ -7,5 +7,11 @@ Your PC should be WIN7 or above and make sure that you have Microsoft Office(ver
 ## Features  
 support Microsoft word document convert between **.doc** and **.docx**
 
+## Usage
+copy the necessary code in the files
+
 ## Documentation
 See code detail in file 'word.py'
+
+### Updates
+ver 0.1 on 2015/10/17
