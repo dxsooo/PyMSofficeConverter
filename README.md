@@ -1,19 +1,28 @@
 # PyMSofficeConverter
-Microsoft office files(.doc/.xls/.ppt etc) converter by Python
 
-## Notice
-Your PC should be WIN7 or above and make sure that you have Microsoft Office(version 2013 or above) installed. Also, prepare your Python2.7 and win32com(get it from http://sourceforge.net/projects/pywin32/)
+## Overview
+Microsoft office files(.doc/.xls/.ppt etc) converter written in Python.  
+Recently supports  
 
-## Features  
-support Microsoft word document convert between **.doc** and **.docx**  
-support Microsoft excel workbook convert between **.xls** and **.xlsx**  
-support Microsoft powerpoint presentation convert between **.ppt** and **.pptx**
+*  Microsoft word document convert between **.doc** and **.docx**  
+*  Microsoft excel workbook convert between **.xls** and **.xlsx**  
+*  Microsoft powerpoint presentation convert between **.ppt** and **.pptx**
 
-## Usage
-copy the necessary code from the files to your own code
+## Requirements  
+* Python 2.7
+* [pywin32](http://sourceforge.net/projects/pywin32/)
 
 ## Documentation
-See code detail in the files
+Copy the `MSofficeConverter` to current directory or under `site-packages` of your python.  
+And then  
 
-## Updates
-ver 0.1 on 2015/10/7
+    from MSofficeConverter import easy_convert
+    easy_convert('x:/test.doc','x:/test.docx') # full path of file, here convert test.doc to test.docx
+Also, you can use a class to do this, but please remember to call `quit()` when your work over.  
+
+    from MSofficeConverter import converter
+    xx=converter('PPT') # the file type you are going to convert, accept 'PPT','DOC','XLS'
+    xx.convert('x:/test.pptx','x:/tst.ppt')
+    # xx.convert('x:/tst.ppt','x:/test2.pptx') # you can do more before you quit
+    xx.quit() # must do this
+It is strongly recommanded that if you are dealing with a quantity of files, you should use the `converter` class and set a loop to call `convert()` instead of `easy_convert()` 
